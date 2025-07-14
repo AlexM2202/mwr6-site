@@ -1,0 +1,56 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-log.txt
+*.log
+*.pot
+*.pyc
+venv/
+env/
+ENV/
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.coverage
+htmlcov/
+.tox/
+.dmypy.json
+.pyre/
+
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vscode/
+dist/
+build/
+.env
+.env.*.local
+
+# === OS / Editor Specific ===
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# === Git ===
+.git/
+!.gitignore
+
+# === CI/CD / Coverage ===
+coverage/
+*.lcov
+.nyc_output/
+.cache/

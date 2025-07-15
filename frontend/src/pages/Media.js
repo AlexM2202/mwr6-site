@@ -9,7 +9,7 @@ function Media(){
         new window.Twitch.Embed("twitch-embed", {
             width: "60%",
             height: 625,
-            channel: "caseoh_",
+            channel: "midwestr6",
             layout: "video",
         });
     }

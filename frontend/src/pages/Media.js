@@ -1,9 +1,27 @@
+import './Media.css'
+
 function Media(){
+    const script = document.createElement('script');
+    script.src = "https://embed.twitch.tv/embed/v1.js";
+    script.async = true;
+
+    window.onload = () => {
+        new window.Twitch.Embed("twitch-embed", {
+            width: "60%",
+            height: 625,
+            channel: "caseoh_",
+            layout: "video",
+        });
+    }
+    document.body.appendChild(script);
+    
     return (
         <div className="Media">
-            <h2>
-                Media Page
-            </h2>
+            <div id="twitch-embed"></div>
+            <div id="partner-schools">
+                <h2>Partner Schools</h2>
+                {/* Insert Partner School stuff here */}
+            </div>
         </div>
     );
 }

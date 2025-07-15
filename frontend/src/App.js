@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './navbar/navbar';
+import CustomNavbar from './navbar/navbar';
 import header_img from './small_header.png';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <img src={header_img} width="100%" />
-      <Navbar />
+      <CustomNavbar />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

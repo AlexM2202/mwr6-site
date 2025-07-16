@@ -14,7 +14,6 @@ function Home(){
 
                 let response = await fetch("https://decapi.me/twitch/uptime/midwestr6");
                 if (!((await response.text()).includes("midwestr6"))) {
-                    console.log("LIVE");
                     const script = document.createElement('script');
                     script.src = "https://embed.twitch.tv/embed/v1.js";
                     script.async = true;
@@ -28,8 +27,6 @@ function Home(){
                         });
                     };
                     document.body.appendChild(script);
-                } else {
-                    console.log("Not live");
                 }
             }
         };

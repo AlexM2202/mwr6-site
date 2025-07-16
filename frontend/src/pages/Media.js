@@ -17,13 +17,50 @@ function Media(){
         }
         document.body.appendChild(script);
     }, []);
+
+    const whitelistedSchools = [
+        {
+            name: 'Lindenwood University',
+            img: '/whitelisted-school-media/lindenwood.png',
+            twitch_link: "https://twitch.tv/LUEsports"
+        },
+        {
+            name: 'Lindenwood University',
+            img: '/whitelisted-school-media/lindenwood.png',
+            twitch_link: "https://twitch.tv/LUEsports"
+        },
+        {
+            name: 'Lindenwood University',
+            img: '/whitelisted-school-media/lindenwood.png',
+            twitch_link: "https://twitch.tv/LUEsports"
+        },
+        {
+            name: 'Lindenwood University',
+            img: '/whitelisted-school-media/lindenwood.png',
+            twitch_link: "https://twitch.tv/LUEsports"
+        },
+        {
+            name: 'Lindenwood University',
+            img: '/whitelisted-school-media/lindenwood.png',
+            twitch_link: "https://twitch.tv/LUEsports"
+        }
+    ]
     
     return (
         <div className="Media">
             <div id="twitch-embed"></div>
-            <div id="partner-schools">
-                <h2>Partner Schools</h2>
-                {/* Insert Partner School stuff here */}
+            <div id="whitelisted-schools">
+                <h2>Whitelisted School Streams</h2>
+                <div className="school-grid">
+                    {whitelistedSchools.map((school, i) => (
+                        <a target="_blank" rel="noopener noreferrer"
+                            href={school.twitch_link}>
+                            <div className="school-card" key={i}>
+                                <img src={school.img} />
+                            </div>
+                        </a>
+                    ))}
+                </div>
             </div>
         </div>
     );

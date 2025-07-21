@@ -47,3 +47,8 @@
   color: #555;
   line-height: 1.5;
 }
+
+.faq-answer-wrapper {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}

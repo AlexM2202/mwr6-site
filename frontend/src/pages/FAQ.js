@@ -30,17 +30,29 @@ const FAQItem = ({ question, answer }) => {
 const FAQ = () => {
   const faqs = [
     {
-      question: 'Is Zaythorr gay?',
-      answer: 'It\'s a likely possibility.',
+      question: 'What is MidwestR6?',
+      answer: 'MidwestR6 is a collegiate Rainbow Six Siege league for students and schools to compete in based in the Midwest Region.',
     },
     {
-      question: 'Will Zaythorr get the actual FAQ by EOD on 7/16/25?',
-      answer: 'Yea, thats not happening.',
+      question: 'What states are Eligible?',
+      answer: 'Iowa, Illinois, Indiana. Minnesota, North Dakota, South Dakota, Michigan, Missouri, Kansas, Kentucky, Ohio, Wisconsin, and Nebraska are all currently allowed states.',
     },
     {
-      question: 'Is hAMPTR going to help with development?',
-      answer: 'Homie doesn\'t even know how to code correctly.',
+      question: 'How do I register my team to join?',
+      answer: 'Announcements will roll out with information on specific information required to join a few weeks before the season starts. If you need help or have questions, please join our discord and open a ticket!',
     },
+    {
+      question: 'How much is the Entry Fee?',
+      answer: 'The entry fee is $50/Team for one semester and $90/Team for a whole year of gameplay.'
+    },
+    {
+      question: 'How is the prize pool split?',
+      answer: 'The prize pool is split among the Top 3 Winners of each divisional bracket.'
+    },
+    {
+      question: 'How do I reach out if I have more questions?',
+      answer: 'Join our discord server and open a ticket! Our match admins are more than willing to help answer any more questions.'
+    }
   ];
 
   const [openStates, setOpenStates] = useState({});
